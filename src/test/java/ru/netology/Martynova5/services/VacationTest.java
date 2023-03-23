@@ -6,8 +6,8 @@ import org.junit.jupiter.params.provider.CsvSource;
 public class VacationTest {
     @ParameterizedTest
     @CsvSource ({
-            "10_000,3_000,20_000,6",
-            "100_000,60_000,150_000,2"
+            "10000,3000,20000,3",
+            "100000,60000,150000,2"
     })
     public void testFirst(int income, int expenses, int threshold, int expected) {
         Vacation service = new Vacation();
